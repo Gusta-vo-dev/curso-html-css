@@ -64,14 +64,22 @@ section.normal {
 }
 
 section.imagem {
-   background-color: rgb(51, 51, 51);
+   background-color: rgba(51, 51, 51, 0);
    color: white;
-      }
+   box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.349);
+}
 
 section.imagem > p {
-   background-color: rgba(0, 0, 0, 0.315);
+   background-color: rgba(0, 0, 0, 0.61);
    display: inline-block;
    padding: 10px;
+   text-shadow: 2px 2px 0px black;
+   box-shadow: 3px 2px 10px black;
+   border-radius: 5px;
+}
+
+section > p {
+   padding-bottom: 2em;
 }
 
 #img-1 {
@@ -79,6 +87,7 @@ section.imagem > p {
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
+   background-position: center center;
 }
 
 #img-2 {
@@ -86,6 +95,7 @@ section.imagem > p {
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
+   background-position: center center;
 }
 
 footer {
