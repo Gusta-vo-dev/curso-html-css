@@ -14,14 +14,23 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        
         
         td.num {
             text-align: right;
         }
 
         td {
-            text-align: center;
+            text-align: left;
         }
 
         td, th {
@@ -30,8 +39,22 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:  #383838;
+        }
+
+        tbody > tr:nth-child(odd){ /* ou (2n-1)*/
+            background-color: white; 
+        }
+
+        tbody > tr:nth-child(even) { /* ou (2n)*/
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -39,6 +62,7 @@
     <h1>Aprendendo a Fazer Tabelas Grandes</h1>
     <!--HERARQUIA DE TABELAS
         TABLE
+            CAPTION
             THEAD
             TR, TD, TH
             TBODY
@@ -48,10 +72,11 @@
         TABLE
     -->
         <table>
+            <CAPtion>População das Unidades Federativas</CAPtion>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -166,10 +191,15 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
-                    <td><strong>210.147.125</strong></td>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="num"><strong>210.147.125</strong></td>
                 </tr>
             </tfoot>
         </table>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius laudantium ut veritatis iste nemo. Sed rerum exercitationem dignissimos fugiat obcaecati. Aspernatur sequi voluptates id ex quo alias nam, officia dolor! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolore, maxime magni, repellat sit est deserunt quibusdam quia voluptas illum aliquid temporibus velit, perspiciatis aliquam veritatis reprehenderit nisi incidunt ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias voluptatem qui amet ipsum neque suscipit minus accusantium ex tempore sint possimus doloribus, similique molestiae odit asperiores sunt voluptates animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati omnis modi nostrum eius, aspernatur saepe natus delectus eos sed voluptatum laudantium quasi at possimus labore veniam, ipsam ipsum enim. Minus!Lorem</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius laudantium ut veritatis iste nemo. Sed rerum exercitationem dignissimos fugiat obcaecati. Aspernatur sequi voluptates id ex quo alias nam, officia dolor! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolore, maxime magni, repellat sit est deserunt quibusdam quia voluptas illum aliquid temporibus velit, perspiciatis aliquam veritatis reprehenderit nisi incidunt ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias voluptatem qui amet ipsum neque suscipit minus accusantium ex tempore sint possimus doloribus, similique molestiae odit asperiores sunt voluptates animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati omnis modi nostrum eius, aspernatur saepe natus delectus eos sed voluptatum laudantium quasi at possimus labore veniam, ipsam ipsum enim. Minus!Lorem</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius laudantium ut veritatis iste nemo. Sed rerum exercitationem dignissimos fugiat obcaecati. Aspernatur sequi voluptates id ex quo alias nam, officia dolor! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolore, maxime magni, repellat sit est deserunt quibusdam quia voluptas illum aliquid temporibus velit, perspiciatis aliquam veritatis reprehenderit nisi incidunt ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias voluptatem qui amet ipsum neque suscipit minus accusantium ex tempore sint possimus doloribus, similique molestiae odit asperiores sunt voluptates animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati omnis modi nostrum eius, aspernatur saepe natus delectus eos sed voluptatum laudantium quasi at possimus labore veniam, ipsam ipsum enim. Minus!Lorem</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius laudantium ut veritatis iste nemo. Sed rerum exercitationem dignissimos fugiat obcaecati. Aspernatur sequi voluptates id ex quo alias nam, officia dolor! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolore, maxime magni, repellat sit est deserunt quibusdam quia voluptas illum aliquid temporibus velit, perspiciatis aliquam veritatis reprehenderit nisi incidunt ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias voluptatem qui amet ipsum neque suscipit minus accusantium ex tempore sint possimus doloribus, similique molestiae odit asperiores sunt voluptates animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati omnis modi nostrum eius, aspernatur saepe natus delectus eos sed voluptatum laudantium quasi at possimus labore veniam, ipsam ipsum enim. Minus!Lorem</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius laudantium ut veritatis iste nemo. Sed rerum exercitationem dignissimos fugiat obcaecati. Aspernatur sequi voluptates id ex quo alias nam, officia dolor! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolore, maxime magni, repellat sit est deserunt quibusdam quia voluptas illum aliquid temporibus velit, perspiciatis aliquam veritatis reprehenderit nisi incidunt ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias voluptatem qui amet ipsum neque suscipit minus accusantium ex tempore sint possimus doloribus, similique molestiae odit asperiores sunt voluptates animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati omnis modi nostrum eius, aspernatur saepe natus delectus eos sed voluptatum laudantium quasi at possimus labore veniam, ipsam ipsum enim. Minus!Lorem</p>
 </body>
 </html>
