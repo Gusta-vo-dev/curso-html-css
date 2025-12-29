@@ -2,6 +2,71 @@
 
 /*Todas as demais midias*/
 
+/*Typical Device Breakpoints
+Celular: até 480px;
+Tablet: de 480px até 768px;
+Desktop: de 769px até 1279px;
+Telas Grandes: acima de 1280px;
+*/
+
 @media print {
-    
+/*Impressão*/
+body {
+    background-image: url(../imagens/back-print.jpg);/*Desnecessário*/
+    }
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#tv { display: none;}
+    img#pc { display: none;}
+    img#print { display: block;}
+    main {
+        border: 2px solid black;
+    }
+    main::after {
+        content: 'Essa impressão foi feita por Gustavo';
+        text-decoration: overline;
+        font-size: 1em;
+    }
+    main h1 {
+        text-shadow: none;
+        color: darkblue;
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+/*Tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);  
+    }
+    img#phone { display: none;}
+    img#tablet { display: block;}
+    img#tv { display: none;}
+    img#pc { display: none;}
+    img#print { display: none;}
+}
+
+
+@media screen and (min-width: 993px) and ( max-width: 1279px ) {
+    /*Desktop*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#tv { display: none;}
+    img#pc { display: block;}
+    img#print { display: none;}
+}
+
+@media screen and (min-width: 1280px) {
+/*Telas Grandes*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#tv { display: block;}
+    img#pc { display: none;}
+    img#print { display: none;}
 }
