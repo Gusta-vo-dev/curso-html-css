@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box 09</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.itens {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens" id="i1">1</div>
+        <div class="itens" id="i2">conteúdo</div>
+        <div class="itens" id="i3">Conteúdo um pouco maior</div>
+        <div class="itens" id="i4">4</div>
+        <div class="itens" id="i5">Este exemplo de conteudo é bem maior que os outros</div>
+        <div class="itens" id="i6">6</div>
+        <div class="itens" id="i7">este não é o maior conteudo</div>
+    </div>
+</body>
+</html>
