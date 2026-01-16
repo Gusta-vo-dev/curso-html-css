@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header > h1 {
+        flex: none;
+        margin-bottom: 10px;
+    }
+
+    header > nav {
+        justify-content: flex-start;
+    }
+
+    nav > a {
+        padding: 8px;
+        margin: 3px;
+        font-size: 14px;
+    }
+}
