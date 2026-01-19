@@ -11,6 +11,9 @@
 <body>
     <header>
         <h1>Meu Site</h1>
+        <div class="icon" onclick="clickIcon()" id="burger">
+            <i class="material-symbols-outlined">menu</i>
+        </div>
         <nav>
                 <a href="#">Opção 01</a>
                 <a href="#">Opção 02</a>
@@ -29,5 +32,15 @@
     <footer>
         <p>Este site foi criado por <a href="https://www.instagram.com/gustavovieira_777" target="_blank">@gustavovieira_777</a>. Um site criado com entuito de aprendizagem!</p>
     </footer>
+    <script>
+        function clickIcon(){
+            let nav = document.querySelector('nav');
+            if(nav.style.display === 'flex'){
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
+        }
+    </script>
 </body>
 </html>
